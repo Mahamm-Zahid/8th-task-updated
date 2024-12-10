@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Todolist.css">
+  <title>To-Do List</title>
+</head>
+
+<body>
+  <div class="todolist-container">
+    <div class="image-section">
+      <img src="https://thumbs.dreamstime.com/b/cartoon-character-businessman-to-do-list-colorful-vector-illustration-business-holding-pencil-clipboard-37465305.jpg" alt="To-Do Image">
+    </div>
+
+    <div class="content-section">
+      <div class="row">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter title...">
+      </div>
+
+      <div class="row">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Enter description..." rows="4"></textarea>
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="add-task">Add Task</button>
+        <button type="button" class="clear">Clear</button>
+      </div>
+
+      <div class="task-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="task-list">
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+  <script src="Todolist.js"></script>
+</body>
+
+</html>
